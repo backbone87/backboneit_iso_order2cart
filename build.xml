@@ -14,8 +14,6 @@
 	</target>
 	
 	<target name="build" depends="clean">
-		<antcall target="tickets"></antcall>
-		
 		<copy todir="${build.dir}/TL_ROOT">
 			<fileset dir="TL_ROOT" includes="**/*.php" />
 			<filterchain>
